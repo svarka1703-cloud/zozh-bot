@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zozh-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: MAX_BOT_TOKEN
+        value: f9LHodD0cOLIbLTwKrlLQeNCpcs5pUIN3KPHmAuyjE07mBYo14nqwTShiQtTSHNM6wjwaQz4EUAnk4vhlplZ
+      - key: DB_PATH
+        value: /app/data/zozh_bot.db
